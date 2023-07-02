@@ -23,20 +23,20 @@
 #include "headers/AccessCard.h"
 #include "headers/Validators.h"
 #include "headers/PythonConnection.h"
-#include "headers/CurrencyHelper.h"
+#include "headers/FinancialInstrumentHelper.h"
 
 
 
 
 int main(int argc, char* argv[]){
 
-     Actions firstAct;
-     std::cout << firstAct.queryPin("777-54-3453")<< std::endl;
+    //  Actions firstAct;
+    //  std::cout << firstAct.queryPin("777-54-3453")<< std::endl;
 
-    std::cout << firstAct.queryBalance("777-54-3453")<< std::endl;
+    // std::cout << firstAct.queryBalance("777-54-3453")<< std::endl;
 
-    // PythonConnection py;
-  // std::cout << py.call_Python_no_Param("callStockAndOptionsUSD") << std::endl;
+    PythonConnection py;
+  std::cout << py.call_Python_no_Param("callStockAndOptionsUSD") << std::endl;
   // std::cout << py.call_Python_no_Param("callOptionsUSD") << std::endl;
 
 //  std::cout << py.call_Python_with_Param("callCurrencies", "ZAR") << std::endl;
