@@ -1,24 +1,14 @@
 #include <iostream>
 #include <string>
-#include <vector>
-#include <bitset>
-#include <map>
-#include <stdlib.h>
-#include <cstdlib>
-#include <cassert>
-#include <functional>
 #include <algorithm>
-#include <mysql/mysql.h>
 #include <mysql_connection.h>
-#include <memory>
-
-#include "mysql_driver.h" 
-#include "mysql_connection.h"
 #include <mysql/mysql.h>
 #include <cppconn/driver.h>
 #include <cppconn/resultset.h>
 #include <cppconn/statement.h>
 #include <cppconn/prepared_statement.h>
+#include "mysql_driver.h" 
+#include "mysql_connection.h"
 
 #include "../headers/Actions.h"
 #include "../headers/DBConnection.h"

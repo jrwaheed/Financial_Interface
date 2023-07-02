@@ -11,19 +11,20 @@
 #include <cassert>
 #include <functional>
 #include <algorithm>
-#include "headers/Customer.h"
-#include "headers/Actions.h"
-#include "headers/AccessCard.h"
-#include "headers/Validators.h"
-#include "headers/PythonConnection.h"
-#include "headers/CurrencyHelper.h"
 #include <boost/version.hpp>
 #include <Python.h>
 #include <stdio.h>
 #include <jsoncpp/json/json.h>
 #include <jsoncpp/json/value.h>
 #include <fstream>
-#include <string>
+
+#include "headers/Customer.h"
+#include "headers/Actions.h"
+#include "headers/AccessCard.h"
+#include "headers/Validators.h"
+#include "headers/PythonConnection.h"
+#include "headers/CurrencyHelper.h"
+
 
 
 
@@ -33,8 +34,8 @@ int main(int argc, char* argv[]){
     // std::cout << firstAct.queryPin("777-54-3453")<< std::endl;
 
     PythonConnection py;
-  // std::cout << py.call_Python_no_Param("callCurrenciesOnUSD") << std::endl;
-  std::cout << py.call_Python_no_Param("callOptionsUSD") << std::endl;
+  std::cout << py.call_Python_no_Param("callCurrenciesOnUSD") << std::endl;
+  // std::cout << py.call_Python_no_Param("callOptionsUSD") << std::endl;
 
 //  std::cout << py.call_Python_with_Param("callCurrencies", "ZAR") << std::endl;
 
@@ -48,22 +49,22 @@ int main(int argc, char* argv[]){
 
 
 
-    // AccessCard fraud("101-000-4444", 1234);
+    //  AccessCard fraud("101-000-4444", 1234);
 
-    // Customer customer01("545-44-4541", "Wilson", "Bob", 0, 2222);
+    //  Customer customer01("545-44-4541", "Wilson", "Bob", 0, 2222);
 
-    // std::shared_ptr <Customer> customer_ptr = std::make_shared<Customer>(customer01);
+    //  std::shared_ptr <Customer> customer_ptr = std::make_shared<Customer>(customer01);
     // decltype(customer_ptr) OJ_ptr(new Customer("433-54-2332", "Simpson", "OJ", 0, 6666)) ;
     
-    // Validators checkCard;
-    // Validators checkExisting;
+    //  Validators checkCard;
+    //  Validators checkExisting;
     // Actions createAccount;
 
     // createAccount.createNewAccount(OJ_ptr, 200000);
 
-    // checkCard.validatePin(fraud);
+    //  checkCard.validatePin(fraud);
     // // firstAct.createNewAccount(ptrCus, 100);
-    // checkExisting.validateNewCustomer(customer_ptr);
+    //  checkExisting.validateNewCustomer(customer_ptr);
 
 
     return 0;
