@@ -27,10 +27,14 @@ float Actions::queryBalance(std::string taxID){
 	pre_stmt->setString(1, taxID);
 	res = pre_stmt->executeQuery();
 
-		// while(res->next()){
-			std::cout << res->getDouble("checking_balance") << std::endl;
-			return (res->getDouble("checking_balance"));
-		// };
+
+	float result = 0;
+	while(res->next()){
+		result =  (res->getDouble("checking_balance"));
+	}
+	
+	return result;
+
 	delete res;
 	delete pre_stmt;
 	delete con;
@@ -169,11 +173,14 @@ int Actions::queryPin(std::string taxID){
 	pre_stmt = con->prepareStatement("SELECT pin FROM customers WHERE tax_id = (?)");
 	pre_stmt->setString(1, taxID);
 	res = pre_stmt->executeQuery();
+	int result = 0;
+
 
 		while(res->next()){
-			int result = res->getInt("pin");
-			return result;
+			result = res->getInt("pin");
 		};
+
+	return result;
 	delete res;
 	delete pre_stmt;
 	delete con;

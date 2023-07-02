@@ -20,7 +20,7 @@ def callCurrencies(baseCurrency):
 
     return result
 
-def callOptionsUSD():
+def callStockAndOptionsUSD():
     url = "https://stock-and-options-trading-data-provider.p.rapidapi.com/options/aapl"
 
     headers = {
