@@ -14,15 +14,20 @@ sql::Connection* DBConnection::establish_Connection() {
 	sql::Connection* con;
 	sql::Statement* stmt;
 	
+	try{
 		sql::Driver *driver = ::sql::mysql::get_driver_instance();
-	con = driver->connect("tcp://127.0.0.1:3306", "admin", "TheHulk1*");
-	con->setSchema("bankingCustomers");
+		con = driver->connect("tcp://127.0.0.1:3306", "admin", "TheHulk1*");
+		con->setSchema("bankingCustomers");
 
-	if (con) {
-		std::cout << " the test connection is working. Connected to database:" <<con <<std::endl;
-	} else {
-		std::cout<< "failed to connect to the database" << std::endl;
-	}
+		if (con) {
+			std::cout << " the test connection is working. Connected to database:" <<con <<std::endl;
+		} else {
+			std::cout<< "failed to connect to the database" << std::endl;
+		}
+	} catch (sql::SQLException &e) {
+		std::cout <<"Error in the db connection" << std::endl;
+		std::cout << "# ERR: " << e.what() << std::endl;
+	}		
 
 	return con;
 };

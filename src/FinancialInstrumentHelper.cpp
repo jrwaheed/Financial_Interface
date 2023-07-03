@@ -20,13 +20,13 @@ std::string FinancialInstrumentHelper::getForeignCurrency(std::string foreignCur
     return foreignRate;
 };
 
-std::string FinacialInstrumentHelper::getOptionPrice(std::string optionPrice, Json::Value currencyJson){
+std::string FinancialInstrumentHelper::getOptionPrice(std::string optionPrice, Json::Value currencyJson){
     // std::string optionPrice = currencyJson["Options"][optionPrice].asString();
 
     return optionPrice;
 };
 
-std::string FinacialInstrumentHelper::getStockPrice(std::string stockPrice, Json::Value currencyJson){
+std::string FinancialInstrumentHelper::getStockPrice(std::string stockPrice, Json::Value currencyJson){
     // std::string optionPrice = currencyJson["Stocks"][stockPrice].asString();
 
     return stockPrice;
