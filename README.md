@@ -7,8 +7,9 @@ or interface, where I could integrate my knowledge of
 financial products. This will probably be an indefinite 
 work-in-progress.
 
-The customer table was created from the following simple script:
 
+NOTES:
+The customer table was created from the following simple script:
 create table customers (
 tax_id varchar(10),
 last_name varchar(30), 
