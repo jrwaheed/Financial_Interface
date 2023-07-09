@@ -32,6 +32,7 @@ bool Validators::validatePin(AccessCard accessCard){
     int queriedPin = action.queryPin(accessCard.getTaxId());
     
     if(queriedPin == accessCard.getPin()){
+        std::cout <<"Pin accepted. Loading.." <<std::endl;
         return true;
     } else {
         std::cout <<"Incorrect pin submitted." <<std::endl;

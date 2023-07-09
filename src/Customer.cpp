@@ -2,8 +2,6 @@
 #include "../headers/Customer.h"
 
 
-
-
 Customer::Customer(std::string tax_id, std::string last_name, std::string first_name, float checking_balance, int pin) :
 	tax_id(tax_id),
 	last_name(last_name),

@@ -1,7 +1,7 @@
 #include <Python.h>
 #include <stdio.h>
 #include <iostream>
-#include <jsoncpp/json/json.h>
+#include <../../jsoncpp/json/json.h>
 #include "../headers/FinancialInstrumentHelper.h"
 
 FinancialInstrumentHelper::FinancialInstrumentHelper(){}

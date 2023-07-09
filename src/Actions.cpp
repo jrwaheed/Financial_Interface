@@ -7,8 +7,8 @@
 #include <cppconn/resultset.h>
 #include <cppconn/statement.h>
 #include <cppconn/prepared_statement.h>
-#include "mysql_driver.h" 
-#include "mysql_connection.h"
+//#include "mysql_driver.h"
+//#include "mysql_connection.h"
 
 #include "../headers/Actions.h"
 #include "../headers/DBConnection.h"
@@ -17,7 +17,7 @@
 Actions::Actions(){}
 
 float Actions::queryBalance(std::string taxID){
-	try{
+
 		sql::PreparedStatement* pre_stmt;
 		sql::ResultSet* res;
 
@@ -39,14 +39,11 @@ float Actions::queryBalance(std::string taxID){
 		delete res;
 		delete pre_stmt;
 		delete con;
-		
-	} catch(...){
-		std::cout << "Error in the balance query." << std::endl;
-	}
+
 }
 
 void Actions::makeDeposit(std::string taxID, float deposit){
-	try {
+	
 		sql::PreparedStatement* pre_stmt; 
 		sql::PreparedStatement* pre_stmt_two;
 		sql::ResultSet* res;
@@ -78,14 +75,11 @@ void Actions::makeDeposit(std::string taxID, float deposit){
 		delete pre_stmt_two;
 		delete con;
 
-	} catch(...){
-		std::cout << "Error while making a deposit." << std::endl;
-	}
 }
 
 
 void Actions::makeWithdrawal(std::string taxID, float withdrawal){
-	try{
+	
 		sql::PreparedStatement* pre_stmt; 
 		sql::PreparedStatement* pre_stmt_two;
 		sql::ResultSet* res;
@@ -122,13 +116,11 @@ void Actions::makeWithdrawal(std::string taxID, float withdrawal){
 		delete pre_stmt_two;
 		delete con;
 
-	} catch(...){
-		std::cout << "Error while making a withdrawal request." << std::endl;
-	}
+
 }
 
 void Actions::createNewAccount(std::shared_ptr<Customer> customer, float deposit){
-	try{
+
 		sql::PreparedStatement* pre_stmt; 
 		sql::PreparedStatement* pre_stmt_two;
 		sql::PreparedStatement* pre_stmt_three;
@@ -175,13 +167,10 @@ void Actions::createNewAccount(std::shared_ptr<Customer> customer, float deposit
 
 		delete con;
 
-	} catch(...){
-		std::cout << "Error creating a new account." << std::endl;
-	}
 }
 
 int Actions::queryPin(std::string taxID){
-	try{
+
 		sql::PreparedStatement* pre_stmt;
 		sql::ResultSet* res;
 
@@ -203,13 +192,11 @@ int Actions::queryPin(std::string taxID){
 		delete pre_stmt;
 		delete con;
 
-	} catch(...){
-		std::cout << "Error in the pin query." << std::endl;
-	}
+
 }
 
 bool Actions::queryExistingCustomer(std::shared_ptr<Customer> customer){
-	try{
+
 		sql::PreparedStatement* pre_stmt;
 		sql::ResultSet* res;
 
@@ -232,10 +219,9 @@ bool Actions::queryExistingCustomer(std::shared_ptr<Customer> customer){
 		delete res;
 		delete pre_stmt;
 		delete con;
-	} catch(...){
-		std::cout << "Error in the existing customer query." << std::endl;
-	}
+
 }
+
 
 
 

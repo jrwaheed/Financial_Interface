@@ -1,6 +1,8 @@
 import requests
 import json
 import PythonKeys
+import sys
+
 
 def callCurrenciesOnUSD():
     url = 'https://v6.exchangerate-api.com/v6/' + PythonKeys.CurrencyAPIKey + '/latest/USD'
@@ -22,6 +24,7 @@ def callCurrencies(baseCurrency):
 
 def callStockAndOptionsUSD():
     url = "https://stock-and-options-trading-data-provider.p.rapidapi.com/options/aapl"
+
 
     headers = {
         "X-RapidAPI-Proxy-Secret": "a755b180-f5a9-11e9-9f69-7bf51e845926",

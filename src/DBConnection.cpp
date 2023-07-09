@@ -3,8 +3,8 @@
 #include <cppconn/resultset.h>
 #include <cppconn/statement.h>
 #include <cppconn/prepared_statement.h>
-#include "mysql_driver.h" 
-#include "mysql_connection.h"
+#include "mysql_driver.h"
+//#include "mysql_connection.h"
 #include "../headers/DBConnection.h"
 
 
@@ -14,7 +14,7 @@ sql::Connection* DBConnection::establish_Connection() {
 	sql::Connection* con;
 	sql::Statement* stmt;
 	
-	try{
+	
 		sql::Driver *driver = ::sql::mysql::get_driver_instance();
 		con = driver->connect("tcp://127.0.0.1:3306", "admin", "TheHulk1*");
 		con->setSchema("bankingCustomers");
@@ -24,10 +24,7 @@ sql::Connection* DBConnection::establish_Connection() {
 		} else {
 			std::cout<< "failed to connect to the database" << std::endl;
 		}
-	} catch (sql::SQLException &e) {
-		std::cout <<"Error in the db connection" << std::endl;
-		std::cout << "# ERR: " << e.what() << std::endl;
-	}		
+	
 
 	return con;
 };
