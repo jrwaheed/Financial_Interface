@@ -11,6 +11,7 @@ public:
 
     std::string getBasicString(QString qtext);
     int getInteger(QString qtext);
+    QString getQString(std::string text);
 };
 
 #endif // QTTOCHELPER_H

@@ -3,7 +3,6 @@
 
 
 #include <iostream>
-#include "string.h"
 
 class AccessCard {
     std::string ac_tax_id;

@@ -28,15 +28,22 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//void MainWindow::on_buttonSubmit_clicked()
-//{
-//    QString taxIDText = ui->textEditTaxID->toPlainText();
-//    QString pinText = ui->textEditPIN->toPlainText();
 
-//    QtToCHelper stringHelper;
-//    std::string submittedTaxID = stringHelper.getBasicString(taxIDText);
-//    int submittedPIN = stringHelper.getInteger(pinText);
+void MainWindow::on_PushButtonSubmit_clicked()
+{
+    QString taxIDText = ui->plainTextTax_ID->toPlainText();
+    QString pinText = ui->plainTextPIN->toPlainText();
 
-//    checkCredentials(submittedTaxID, submittedPIN);
+    QtToCHelper helper;
+    std::string submittedTaxID = helper.getBasicString(taxIDText);
+    int submittedPIN = helper.getInteger(pinText);
 
-//}
+    bool loginResult = checkCredentials(submittedTaxID, submittedPIN);
+
+    if(loginResult){
+        ui->loginSubmitResultLabel->setText(helper.getQString("Successful login"));
+    } else {
+        ui->loginSubmitResultLabel->setText(helper.getQString("Failed to login"));
+    };
+}
+

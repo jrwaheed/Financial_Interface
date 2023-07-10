@@ -10,7 +10,6 @@ struct PythonConnection{
     PythonConnection();
     std::string call_Python_no_Param(const char* functionName);
     std::string call_Python_with_Param(const char* functionName, std::string currency);
-    
 };
 
 #endif
