@@ -14,17 +14,20 @@
 #include "Customer.h"
 
 
-
-
 class Actions {
 	public:
 		Actions();
 	
 		float queryBalance(std::string taxID);
-		void makeDeposit(std::string, float deposit);
-		void makeWithdrawal(std::string, float withdrawal);
-		void createNewAccount(std::shared_ptr<Customer> customer, float deposit);
-		int queryPin(std::string taxID);
-		bool queryExistingCustomer(std::shared_ptr<Customer> customer);
+
+        void makeDeposit(std::string, float deposit);
+
+        void makeWithdrawal(std::string, float withdrawal);
+
+        void createNewAccount(std::shared_ptr<Customer> customer, float deposit);
+
+        int queryPin(std::string taxID);
+
+        bool queryExistingCustomer(std::shared_ptr<Customer> customer);
 };
 #endif

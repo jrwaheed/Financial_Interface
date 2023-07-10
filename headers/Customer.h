@@ -17,24 +17,24 @@ public:
 
 	~Customer();
 
-		void setTaxId(std::string tId);
+    void setTaxId(std::string tId);
 
-		void setLastName(std::string lastName);
+    void setLastName(std::string lastName);
 
-		void setFirstName(std::string firstName);
-		
-		void setCheckingBalance(float checkingBalance);
+    void setFirstName(std::string firstName);
 
-		void setPin(int pin);
+    void setCheckingBalance(float checkingBalance);
 
-		std::string getTaxId();
+    void setPin(int pin);
 
-		std::string getLastName();
+    std::string getTaxId();
 
-		std::string getFirstName();
-		
-		float getCheckingBalance();
+    std::string getLastName();
 
-		int getPin();
+    std::string getFirstName();
+
+    float getCheckingBalance();
+
+    int getPin();
 };
 #endif

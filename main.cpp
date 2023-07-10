@@ -10,6 +10,9 @@
 #include <sqlite3.h>
 #include <QApplication>
 
+#include "headers/DBConnection.h"
+#include "headers/Actions.h"
+#include "headers/PythonConnection.h"
 #include "mainwindow.h"
 
 
@@ -17,25 +20,25 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+//    QApplication a(argc, argv);
+//    MainWindow w;
+//    w.show();
 
-    std::cout <<"Basic test" << std::endl;
-
-
+//    std::cout <<"Basic test" << std::endl;
 
 
-//        DBConnection db;
-//        db.establish_Connection();
-
-//       Actions firstAct;
-//        std::cout << firstAct.queryPin("777-54-3453")<< std::endl;
-
-//        PythonConnection Py;
-//        std::cout << Py.call_Python_with_Param("callCurrencies", "ZAR") << std::endl;
 
 
-    return a.exec();
-//    return 0;
+        DBConnection db;
+        db.establish_Connection();
+
+       Actions firstAct;
+        std::cout << firstAct.queryPin("777-54-3453")<< std::endl;
+
+        PythonConnection Py;
+        std::cout << Py.call_Python_with_Param("callCurrencies", "ZAR") << std::endl;
+
+
+//    return a.exec();
+    return 0;
 }

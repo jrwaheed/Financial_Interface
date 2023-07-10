@@ -4,6 +4,7 @@
 
 #include <iostream>
 
+
 class AccessCard {
     std::string ac_tax_id;
     int ac_pin;

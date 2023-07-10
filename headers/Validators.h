@@ -4,16 +4,6 @@
 
 #include <iostream>
 #include <string>
-#include <vector>
-#include <array>
-#include <iterator>
-#include <bitset>
-#include <map>
-#include <stdlib.h>
-#include <cstdlib>
-#include <cassert>
-#include <functional>
-#include <algorithm>
 #include <mysql/mysql.h>
 #include <mysql_connection.h>
 #include <mysql/mysql.h>
@@ -33,10 +23,13 @@ class Validators {
 	public:
 		Validators();
 	
-		bool validatePositiveBalance(Customer customer);
-		bool validatePin(AccessCard accessCard);
-		bool validateNewCustomer(std::shared_ptr<Customer> customer);
-		bool validateBalanceExceedsWithdrawal(Customer* customer, float withdrawal);
+        bool validatePositiveBalance(Customer customer);
+
+        bool validatePin(AccessCard accessCard);
+
+        bool validateNewCustomer(std::shared_ptr<Customer> customer);
+
+        bool validateBalanceExceedsWithdrawal(Customer* customer, float withdrawal);
 		
 };
 #endif
