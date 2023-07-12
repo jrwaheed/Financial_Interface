@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.o"
   "CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.o"
   "CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o"
+  "CMakeFiles/Financial_Interface.dir/useroverview.cpp.o"
   "Financial_Interface"
   "Financial_Interface.pdb"
 )

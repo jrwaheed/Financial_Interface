@@ -51,6 +51,11 @@
 			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.h",
+			"MU",
+			"EWIEGA46WW/moc_useroverview.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -141,6 +146,10 @@
 		],
 		[
 			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Validators.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp",
 			"MU"
 		]
 	],

@@ -17,7 +17,6 @@ public:
     ~MainWindow();
 
 
-
 private slots:
     void on_PushButtonSubmit_clicked();
 

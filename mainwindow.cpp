@@ -46,10 +46,9 @@ void MainWindow::on_PushButtonSubmit_clicked()
     bool loginResult = checkCredentials(submittedTaxID, submittedPIN);
 
     if(loginResult){
-         this->hide();
-         useroverview* newuseroverview = new useroverview;
-
-         newuseroverview->show();
+        this->hide();
+        useroverview* newuseroverview = new useroverview(nullptr, submittedTaxID);
+        newuseroverview->show();
 
 
     } else {

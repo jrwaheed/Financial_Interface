@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/include -I/usr/include/python3.8 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g   -fPIC -std=gnu++17 -o CMakeFiles/Financial_Interface.dir/useroverview.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp",
+  "file": "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp"
+},
+{
+  "directory": "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build",
   "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/include -I/usr/include/python3.8 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g   -fPIC -std=gnu++17 -o CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp",
   "file": "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp"
 },

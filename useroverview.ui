@@ -27,7 +27,7 @@
      <string>Check Account Balance</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="checkingAccountBalance">
     <property name="geometry">
      <rect>
       <x>410</x>
