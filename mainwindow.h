@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "useroverview.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,7 +21,10 @@ public:
 private slots:
     void on_PushButtonSubmit_clicked();
 
+    void on_pushButtonReset_clicked();
+
 private:
     Ui::MainWindow *ui;
+    useroverview* newuseroverview;
 };
 #endif // MAINWINDOW_H

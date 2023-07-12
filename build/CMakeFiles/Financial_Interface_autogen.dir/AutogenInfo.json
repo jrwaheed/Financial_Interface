@@ -1,0 +1,152 @@
+{
+	"BUILD_DIR" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen",
+	"CMAKE_BINARY_DIR" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface",
+	"HEADERS" : 
+	[
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/AccessCard.h",
+			"MU",
+			"K6S233IZAZ/moc_AccessCard.cpp"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/Actions.h",
+			"MU",
+			"K6S233IZAZ/moc_Actions.cpp"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/Customer.h",
+			"MU",
+			"K6S233IZAZ/moc_Customer.cpp"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/DBConnection.h",
+			"MU",
+			"K6S233IZAZ/moc_DBConnection.cpp"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/FinancialInstrumentHelper.h",
+			"MU",
+			"K6S233IZAZ/moc_FinancialInstrumentHelper.cpp"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/PythonConnection.h",
+			"MU",
+			"K6S233IZAZ/moc_PythonConnection.cpp"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/QtToCHelper.h",
+			"MU",
+			"K6S233IZAZ/moc_QtToCHelper.cpp"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/Validators.h",
+			"MU",
+			"K6S233IZAZ/moc_Validators.cpp"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/usr/include/python3.8",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/c++/11",
+		"/usr/include/x86_64-linux-gnu/c++/11",
+		"/usr/include/c++/11/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/11/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 12,
+	"PARSE_CACHE_FILE" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles/Financial_Interface_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"SETTINGS_FILE" : "/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles/Financial_Interface_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/main.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/mainwindow.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Actions.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Customer.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/DBConnection.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/FinancialInstrumentHelper.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PythonConnection.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/QtToCHelper.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Validators.cpp",
+			"MU"
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

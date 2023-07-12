@@ -5,11 +5,11 @@
 #include <iostream>
 
 class Customer {
-		std::string tax_id;
-		std::string last_name;
-		std::string first_name;
-		float checking_balance;
-		int pin;
+    std::string tax_id;
+    std::string last_name;
+    std::string first_name;
+    float checking_balance;
+    int pin;
 
 
 public:

@@ -15,6 +15,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
+        useroverview.cpp
         src/AccessCard.cpp
         src/Actions.cpp
         src/Customer.cpp
@@ -24,6 +25,10 @@ set(PROJECT_SOURCES
         src/Validators.cpp
         src/QtToCHelper.cpp
 
+        mainwindow.h
+        mainwindow.ui
+        useroverview.h
+        useroverview.ui
         headers/AccessCard.h
         headers/Actions.h
         headers/Customer.h
@@ -32,8 +37,7 @@ set(PROJECT_SOURCES
         headers/PythonConnection.h
         headers/Validators.h
         headers/QtToCHelper.h
-        mainwindow.h
-        mainwindow.ui
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
