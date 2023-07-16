@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <string>
+#include <map>
 #include <mysql/mysql.h>
 #include <mysql_connection.h>
 #include <mysql/mysql.h>
@@ -29,5 +30,9 @@ class Actions {
         int queryPin(std::string taxID);
 
         bool queryExistingCustomer(std::shared_ptr<Customer> customer);
+
+        bool isPortfolioHolder(std::string taxID);
+
+        std::map<std::string, int> queryPortfolioPosition(std::string taxID);
 };
 #endif

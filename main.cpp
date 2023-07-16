@@ -1,6 +1,7 @@
 #include <iostream>
 #include<memory>
 #include <string>
+#include <map>
 #include <boost/version.hpp>
 #include <Python.h>
 #include <stdio.h>
@@ -20,26 +21,30 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-   QApplication a(argc, argv);
-   MainWindow w;
-   w.show();
+//    QApplication a(argc, argv);
+//    MainWindow w;
+//    w.show();
 
 
-   std::cout <<"Basic test" << std::endl;
+//    std::cout <<"Basic test" << std::endl;
 
 
 
 
-    //     DBConnection db;
-    //     db.establish_Connection();
+        DBConnection db;
+        db.establish_Connection();
 
-    //    Actions firstAct;
-    //     std::cout << firstAct.queryPin("777-54-3453")<< std::endl;
+       Actions firstAct;
+        std::map<std::string, int> portfolio = firstAct.queryPortfolioPosition("101-000-4444");
+
+      for(auto ele : portfolio){
+           std::cout << "Ticker: " << ele.first <<" Shares: " << ele.second << std::endl;
+       }
 
     //     PythonConnection Py;
     //     std::cout << Py.call_Python_with_Param("callCurrencies", "ZAR") << std::endl;
 
 
-   return a.exec();
-    // return 0;
+//    return a.exec();
+    return 0;
 }

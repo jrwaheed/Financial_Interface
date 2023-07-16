@@ -24,7 +24,7 @@ class Ui_useroverview
 public:
     QWidget *centralwidget;
     QLabel *label;
-    QLabel *label_2;
+    QLabel *checkingAccountBalance;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -38,9 +38,9 @@ public:
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(100, 60, 151, 31));
-        label_2 = new QLabel(centralwidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(410, 60, 311, 41));
+        checkingAccountBalance = new QLabel(centralwidget);
+        checkingAccountBalance->setObjectName(QString::fromUtf8("checkingAccountBalance"));
+        checkingAccountBalance->setGeometry(QRect(410, 60, 311, 41));
         useroverview->setCentralWidget(centralwidget);
         menubar = new QMenuBar(useroverview);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -59,7 +59,7 @@ public:
     {
         useroverview->setWindowTitle(QApplication::translate("useroverview", "MainWindow", nullptr));
         label->setText(QApplication::translate("useroverview", "Check Account Balance", nullptr));
-        label_2->setText(QApplication::translate("useroverview", "TextLabel", nullptr));
+        checkingAccountBalance->setText(QApplication::translate("useroverview", "TextLabel", nullptr));
     } // retranslateUi
 
 };

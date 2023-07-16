@@ -721,6 +721,8 @@ CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o
  /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/Validators.h
  /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Validators.cpp
 CMakeFiles/Financial_Interface.dir/useroverview.cpp.o
+ /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/Actions.h
+ /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/Customer.h
  /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp
  /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant

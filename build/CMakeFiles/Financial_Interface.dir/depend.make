@@ -720,6 +720,8 @@ CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o: ../headers/DBConnection
 CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o: ../headers/Validators.h
 CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o: ../src/Validators.cpp
 
+CMakeFiles/Financial_Interface.dir/useroverview.cpp.o: ../headers/Actions.h
+CMakeFiles/Financial_Interface.dir/useroverview.cpp.o: ../headers/Customer.h
 CMakeFiles/Financial_Interface.dir/useroverview.cpp.o: ../useroverview.cpp
 CMakeFiles/Financial_Interface.dir/useroverview.cpp.o: ../useroverview.h
 CMakeFiles/Financial_Interface.dir/useroverview.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant

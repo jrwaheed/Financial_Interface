@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <map>
 #include <mysql_connection.h>
 #include <mysql/mysql.h>
 #include <cppconn/driver.h>
@@ -192,7 +193,6 @@ int Actions::queryPin(std::string taxID){
 		delete pre_stmt;
 		delete con;
 
-
 }
 
 bool Actions::queryExistingCustomer(std::shared_ptr<Customer> customer){
@@ -223,8 +223,66 @@ bool Actions::queryExistingCustomer(std::shared_ptr<Customer> customer){
 }
 
 
+bool Actions::isPortfolioHolder(std::string taxID){
+		sql::PreparedStatement* pre_stmt;
+		sql::ResultSet* res;
+
+		DBConnection dbCon;
+		sql::Connection* con = dbCon.establish_Connection();
+
+		pre_stmt = con->prepareStatement("SELECT portfolio FROM customers WHERE tax_id = (?)");
+		pre_stmt-> setString(1, taxID);
+		res = pre_stmt->executeQuery();
+
+        bool result = 0;
 
 
+        while(res->next()){
+            result = res->getBoolean("portfolio");
+        };
+
+        if(result == true){
+			std::cout <<"This is a portfolio holder." << std::endl;
+			return true;
+		} else {
+			return false;
+		}
+
+		delete res;
+		delete pre_stmt;
+		delete con;
+
+}
+
+std::map<std::string, int> Actions::queryPortfolioPosition(std::string taxID){
+        sql::PreparedStatement* pre_stmt;
+        sql::ResultSet* res;
+
+        DBConnection dbCon;
+        sql::Connection* con = dbCon.establish_Connection();
+
+        pre_stmt = con->prepareStatement("SELECT * FROM portfolios WHERE tax_id = (?)");
+        pre_stmt->setString(1, taxID);
+        res = pre_stmt->executeQuery();
+		
+        std::string ticker;
+        int shares = 0;
+        std::map<std::string, int> portfolio;
+
+
+        while(res->next()){
+            ticker = res->getString("ticker");
+            shares = res->getInt("shares");
+
+            portfolio.insert({ticker, shares});
+        };
+
+        return portfolio;
+        delete res;
+        delete pre_stmt;
+        delete con;
+		
+}
 
 
 
