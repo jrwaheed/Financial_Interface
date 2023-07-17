@@ -19,9 +19,10 @@ Actions::Actions(){}
 
 float Actions::queryBalance(std::string taxID){
 
-		sql::PreparedStatement* pre_stmt;
-		sql::ResultSet* res;
+	sql::PreparedStatement* pre_stmt;
+	sql::ResultSet* res;
 
+	try{
 		DBConnection dbCon;
 		sql::Connection* con = dbCon.establish_Connection();
 
@@ -40,15 +41,20 @@ float Actions::queryBalance(std::string taxID){
 		delete res;
 		delete pre_stmt;
 		delete con;
-
+	
+	} catch(...){
+		std::cout <<"Exception occurred while accessing the database." << std::endl;
+	}
+	return 0;
 }
 
 void Actions::makeDeposit(std::string taxID, float deposit){
 	
-		sql::PreparedStatement* pre_stmt; 
-		sql::PreparedStatement* pre_stmt_two;
-		sql::ResultSet* res;
+	sql::PreparedStatement* pre_stmt; 
+	sql::PreparedStatement* pre_stmt_two;
+	sql::ResultSet* res;
 
+	try{
 		DBConnection dbCon;
 		sql::Connection* con = dbCon.establish_Connection();
 
@@ -75,16 +81,20 @@ void Actions::makeDeposit(std::string taxID, float deposit){
 		delete res;
 		delete pre_stmt_two;
 		delete con;
-
+	
+	} catch(...){
+		std::cout <<"Exception occurred while accessing the database." << std::endl;
+	}
 }
 
 
 void Actions::makeWithdrawal(std::string taxID, float withdrawal){
 	
-		sql::PreparedStatement* pre_stmt; 
-		sql::PreparedStatement* pre_stmt_two;
-		sql::ResultSet* res;
+	sql::PreparedStatement* pre_stmt; 
+	sql::PreparedStatement* pre_stmt_two;
+	sql::ResultSet* res;
 
+	try{
 		DBConnection dbCon;
 		sql::Connection* con = dbCon.establish_Connection();
 
@@ -116,16 +126,19 @@ void Actions::makeWithdrawal(std::string taxID, float withdrawal){
 		delete res;
 		delete pre_stmt_two;
 		delete con;
-
-
+	
+	}catch(...){
+		std::cout <<"Exception occurred while accessing the database." << std::endl;
+	}
 }
 
 void Actions::createNewAccount(std::shared_ptr<Customer> customer, float deposit){
 
-		sql::PreparedStatement* pre_stmt; 
-		sql::PreparedStatement* pre_stmt_two;
-		sql::PreparedStatement* pre_stmt_three;
+	sql::PreparedStatement* pre_stmt; 
+	sql::PreparedStatement* pre_stmt_two;
+	sql::PreparedStatement* pre_stmt_three;
 
+	try{
 		DBConnection dbCon;
 		sql::Connection* con = dbCon.establish_Connection();
 
@@ -141,7 +154,6 @@ void Actions::createNewAccount(std::shared_ptr<Customer> customer, float deposit
 				InteralID.erase(InternalID_itr);
 			}
 		}
-
 
 		pre_stmt = con->prepareStatement("CREATE TABLE " + InteralID + " (action VARCHAR(15), amount DECIMAL(12,2), date DATE)");
 		pre_stmt->execute();
@@ -164,17 +176,21 @@ void Actions::createNewAccount(std::shared_ptr<Customer> customer, float deposit
 		pre_stmt_three->setDouble(4, deposit);
 		pre_stmt_three->setInt(5, customer->getPin());
 		pre_stmt_three->execute();
-		delete pre_stmt_three;
 
+		delete pre_stmt_three;
 		delete con;
 
+	}catch(...){
+		std::cout <<"Exception occurred while accessing the database." << std::endl;
+	}
 }
 
 int Actions::queryPin(std::string taxID){
 
-		sql::PreparedStatement* pre_stmt;
-		sql::ResultSet* res;
+	sql::PreparedStatement* pre_stmt;
+	sql::ResultSet* res;
 
+	try{
 		DBConnection dbCon;
 		sql::Connection* con = dbCon.establish_Connection();
 
@@ -192,14 +208,19 @@ int Actions::queryPin(std::string taxID){
 		delete res;
 		delete pre_stmt;
 		delete con;
-
+	
+	} catch(...){
+		std::cout <<"Exception occurred while accessing the database." << std::endl;
+	}
+	return 0;
 }
 
 bool Actions::queryExistingCustomer(std::shared_ptr<Customer> customer){
 
-		sql::PreparedStatement* pre_stmt;
-		sql::ResultSet* res;
+	sql::PreparedStatement* pre_stmt;
+	sql::ResultSet* res;
 
+	try{
 		DBConnection dbCon;
 		sql::Connection* con = dbCon.establish_Connection();
 
@@ -220,13 +241,18 @@ bool Actions::queryExistingCustomer(std::shared_ptr<Customer> customer){
 		delete pre_stmt;
 		delete con;
 
+	} catch(...){
+		std::cout <<"Exception occurred while accessing the database." << std::endl;
+	}
+	return false;
 }
 
 
 bool Actions::isPortfolioHolder(std::string taxID){
-		sql::PreparedStatement* pre_stmt;
-		sql::ResultSet* res;
+	sql::PreparedStatement* pre_stmt;
+	sql::ResultSet* res;
 
+	try{
 		DBConnection dbCon;
 		sql::Connection* con = dbCon.establish_Connection();
 
@@ -234,17 +260,18 @@ bool Actions::isPortfolioHolder(std::string taxID){
 		pre_stmt-> setString(1, taxID);
 		res = pre_stmt->executeQuery();
 
-        bool result = 0;
+		bool result = 0;
 
 
-        while(res->next()){
-            result = res->getBoolean("portfolio");
-        };
+		while(res->next()){
+			result = res->getBoolean("portfolio");
+		};
 
-        if(result == true){
+		if(result == true){
 			std::cout <<"This is a portfolio holder." << std::endl;
 			return true;
 		} else {
+			std::cout <<"This is not a portfolio holder." << std::endl;
 			return false;
 		}
 
@@ -252,36 +279,44 @@ bool Actions::isPortfolioHolder(std::string taxID){
 		delete pre_stmt;
 		delete con;
 
+	} catch(...){
+		std::cout <<"Exception occurred while accessing the database." << std::endl;
+	}
+	return false;
 }
 
 std::map<std::string, int> Actions::queryPortfolioPosition(std::string taxID){
-        sql::PreparedStatement* pre_stmt;
-        sql::ResultSet* res;
+	sql::PreparedStatement* pre_stmt;
+	sql::ResultSet* res;
+	std::map<std::string, int> portfolio;
 
-        DBConnection dbCon;
-        sql::Connection* con = dbCon.establish_Connection();
+	try {
+		DBConnection dbCon;
+		sql::Connection* con = dbCon.establish_Connection();
 
-        pre_stmt = con->prepareStatement("SELECT * FROM portfolios WHERE tax_id = (?)");
-        pre_stmt->setString(1, taxID);
-        res = pre_stmt->executeQuery();
+		pre_stmt = con->prepareStatement("SELECT * FROM portfolios WHERE tax_id = (?)");
+		pre_stmt->setString(1, taxID);
+		res = pre_stmt->executeQuery();
 		
-        std::string ticker;
-        int shares = 0;
-        std::map<std::string, int> portfolio;
-
-
-        while(res->next()){
-            ticker = res->getString("ticker");
-            shares = res->getInt("shares");
-
-            portfolio.insert({ticker, shares});
-        };
-
-        return portfolio;
-        delete res;
-        delete pre_stmt;
-        delete con;
+		std::string ticker;
+		int shares = 0;
 		
+		while(res->next()){
+			ticker = res->getString("ticker");
+			shares = res->getInt("shares");
+
+			portfolio.insert({ticker, shares});
+		};
+
+		return portfolio;
+		delete res;
+		delete pre_stmt;
+		delete con;
+
+	} catch(...){
+		std::cout <<"Exception occurred while accessing the database." << std::endl;
+	}	
+	return portfolio;
 }
 
 

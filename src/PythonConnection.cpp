@@ -1,8 +1,12 @@
 
 #include <stdio.h>
 #include <iostream>
-#include <jsoncpp/json/json.h>
+ #include <jsoncpp/json/json.h>
+#include <jsoncpp/json/reader.h>
+#include <jsoncpp/json/writer.h>
+#include <jsoncpp/json/value.h>
 #include <fstream>
+#include <sstream>
 #include <string>
 #include <Python.h>
 
@@ -54,3 +58,11 @@ std::string PythonConnection::call_Python_with_Param(const char* functionName, s
     
     Py_Finalize();    
 }
+
+// Json::Value convertToJson(std::string simpleText){
+//     Json::Value root;   
+//     Json::Reader reader;
+
+//     std::stringstream(simpleText) >> root;
+
+// }

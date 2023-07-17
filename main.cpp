@@ -31,18 +31,21 @@ int main(int argc, char *argv[])
 
 
 
-        DBConnection db;
-        db.establish_Connection();
+    //     DBConnection db;
+    //     db.establish_Connection();
 
-       Actions firstAct;
-        std::map<std::string, int> portfolio = firstAct.queryPortfolioPosition("101-000-4444");
+    //    Actions firstAct;
+        // std::map<std::string, int> portfolio = firstAct.queryPortfolioPosition("101-000-4444");
+        // std::cout << "here is the answer: " <<firstAct.isPortfolioHolder("666-11-1233");
 
-      for(auto ele : portfolio){
-           std::cout << "Ticker: " << ele.first <<" Shares: " << ele.second << std::endl;
-       }
+        //  std::cout << "here is the answer: " <<firstAct.queryPin("666-11-1233");
 
-    //     PythonConnection Py;
-    //     std::cout << Py.call_Python_with_Param("callCurrencies", "ZAR") << std::endl;
+    //   for(auto ele : portfolio){
+    //        std::cout << "Ticker: " << ele.first <<" Shares: " << ele.second << std::endl;
+    //    }
+
+        PythonConnection Py;
+        std::cout << Py.call_Python_with_Param("callCurrencies", "ZAR") << std::endl;
 
 
 //    return a.exec();
