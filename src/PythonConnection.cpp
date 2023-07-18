@@ -1,16 +1,19 @@
 
 #include <stdio.h>
 #include <iostream>
- #include <jsoncpp/json/json.h>
-#include <jsoncpp/json/reader.h>
-#include <jsoncpp/json/writer.h>
-#include <jsoncpp/json/value.h>
+//  #include <jsoncpp/json/json.h>
+// #include <jsoncpp/json/reader.h>
+// #include <jsoncpp/json/writer.h>
+// #include <jsoncpp/json/value.h>
 #include <fstream>
 #include <sstream>
 #include <string>
 #include <Python.h>
+#include <nlohmann/json.hpp>
 
 #include "../headers/PythonConnection.h"
+
+ using json = nlohmann::json;
 
 
 PythonConnection::PythonConnection(){}
@@ -48,21 +51,26 @@ std::string PythonConnection::call_Python_with_Param(const char* functionName, s
         PyErr_Print();
         std::exit(1);
     }
-
+     
     func = PyObject_GetAttrString(load_module,functionName);
     args = PyTuple_Pack(1, PyUnicode_FromString(currency.c_str()));
     callfunc = PyObject_CallObject(func, args);
     std::string result = _PyUnicode_AsString(callfunc);
    
+
     return result;
     
     Py_Finalize();    
-}
+};
 
-// Json::Value convertToJson(std::string simpleText){
-//     Json::Value root;   
-//     Json::Reader reader;
+json PythonConnection::convertToJson(std::string simpleText){
+    auto fullJson = nlohmann::json::parse(simpleText);
+    
+    auto result =  fullJson["conversion_rates"]["AED"];
+    const auto valueToString = result.dump();
 
-//     std::stringstream(simpleText) >> root;
+    std::cout <<"Here is the value: " <<valueToString << std::endl;
 
-// }
+};
+
+// std::string PythonConnection::getCurrencyConversion(json fulljson, )

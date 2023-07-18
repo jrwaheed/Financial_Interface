@@ -13,21 +13,13 @@ stdio.h
 -
 iostream
 -
-jsoncpp/json/json.h
+nlohmann/json.hpp
 -
 
 /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PythonConnection.cpp
 stdio.h
 -
 iostream
--
-jsoncpp/json/json.h
--
-jsoncpp/json/reader.h
--
-jsoncpp/json/writer.h
--
-jsoncpp/json/value.h
 -
 fstream
 -
@@ -36,6 +28,8 @@ sstream
 string
 -
 Python.h
+-
+nlohmann/json.hpp
 -
 ../headers/PythonConnection.h
 /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/PythonConnection.h

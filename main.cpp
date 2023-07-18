@@ -5,11 +5,12 @@
 #include <boost/version.hpp>
 #include <Python.h>
 #include <stdio.h>
-#include <jsoncpp/json/json.h>
-#include <jsoncpp/json/value.h>
+// #include <jsoncpp/json/json.h>
+// #include <jsoncpp/json/value.h>
 #include <fstream>
 #include <sqlite3.h>
 #include <QApplication>
+#include <nlohmann/json.hpp>
 
 #include "headers/DBConnection.h"
 #include "headers/Actions.h"
@@ -18,6 +19,7 @@
 
 
 using namespace std;
+using json = nlohmann::json;
 
 int main(int argc, char *argv[])
 {
@@ -46,7 +48,10 @@ int main(int argc, char *argv[])
 
         PythonConnection Py;
         std::cout << Py.call_Python_with_Param("callCurrencies", "ZAR") << std::endl;
-
+        string sampleString = Py.call_Python_with_Param("callCurrencies", "ZAR");
+        
+        Py.convertToJson(sampleString);
+        
 
 //    return a.exec();
     return 0;

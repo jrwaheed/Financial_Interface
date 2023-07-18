@@ -66,6 +66,8 @@ endif()
 find_package(PythonLibs REQUIRED)
 include_directories(${PYTHON_INCLUDE_DIRS})
 
+find_package(nlohmann_json REQUIRED)
+target_link_libraries(Financial_Interface PRIVATE nlohmann_json::nlohmann_json)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(JSONCPP jsoncpp)
@@ -74,6 +76,7 @@ link_libraries(${JSONCPP_LIBRARIES})
 target_link_libraries(Financial_Interface PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
     ${PYTHON_LIBRARIES}
     ${JSONCPP_LIBRARIES}
+   
     /usr/lib/x86_64-linux-gnu/libmysqlcppconn.so)
 
 set_target_properties(Financial_Interface PROPERTIES

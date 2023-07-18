@@ -24,6 +24,15 @@ def callCurrencies(baseCurrency):
 
     return result
 
+def callCurrenciesInJson(baseCurrency):
+    url = 'https://v6.exchangerate-api.com/v6/' + PythonKeys.CurrencyAPIKey + \
+        '/latest/' + baseCurrency
+
+    response = requests.get(url)
+    data = response.json()
+    
+    return data
+
 
 def callStockAndOptionsUSD():
     url = "https://stock-and-options-trading-data-provider.p.rapidapi.com \
