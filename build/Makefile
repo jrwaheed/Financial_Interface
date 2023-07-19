@@ -398,6 +398,33 @@ src/FinancialInstrumentHelper.cpp.s:
 	$(MAKE) -f CMakeFiles/Financial_Interface.dir/build.make CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.s
 .PHONY : src/FinancialInstrumentHelper.cpp.s
 
+src/JsonHelper.o: src/JsonHelper.cpp.o
+
+.PHONY : src/JsonHelper.o
+
+# target to build an object file
+src/JsonHelper.cpp.o:
+	$(MAKE) -f CMakeFiles/Financial_Interface.dir/build.make CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.o
+.PHONY : src/JsonHelper.cpp.o
+
+src/JsonHelper.i: src/JsonHelper.cpp.i
+
+.PHONY : src/JsonHelper.i
+
+# target to preprocess a source file
+src/JsonHelper.cpp.i:
+	$(MAKE) -f CMakeFiles/Financial_Interface.dir/build.make CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.i
+.PHONY : src/JsonHelper.cpp.i
+
+src/JsonHelper.s: src/JsonHelper.cpp.s
+
+.PHONY : src/JsonHelper.s
+
+# target to generate assembly for a file
+src/JsonHelper.cpp.s:
+	$(MAKE) -f CMakeFiles/Financial_Interface.dir/build.make CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.s
+.PHONY : src/JsonHelper.cpp.s
+
 src/PythonConnection.o: src/PythonConnection.cpp.o
 
 .PHONY : src/PythonConnection.o
@@ -544,6 +571,9 @@ help:
 	@echo "... src/FinancialInstrumentHelper.o"
 	@echo "... src/FinancialInstrumentHelper.i"
 	@echo "... src/FinancialInstrumentHelper.s"
+	@echo "... src/JsonHelper.o"
+	@echo "... src/JsonHelper.i"
+	@echo "... src/JsonHelper.s"
 	@echo "... src/PythonConnection.o"
 	@echo "... src/PythonConnection.i"
 	@echo "... src/PythonConnection.s"

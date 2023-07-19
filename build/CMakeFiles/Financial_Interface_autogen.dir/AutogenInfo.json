@@ -33,6 +33,11 @@
 			"K6S233IZAZ/moc_FinancialInstrumentHelper.cpp"
 		],
 		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/JsonHelper.h",
+			"MU",
+			"K6S233IZAZ/moc_JsonHelper.cpp"
+		],
+		[
 			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/PythonConnection.h",
 			"MU",
 			"K6S233IZAZ/moc_PythonConnection.cpp"
@@ -134,6 +139,10 @@
 		],
 		[
 			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/FinancialInstrumentHelper.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/JsonHelper.cpp",
 			"MU"
 		],
 		[

@@ -24,6 +24,7 @@ set(PROJECT_SOURCES
         src/PythonConnection.cpp
         src/Validators.cpp
         src/QtToCHelper.cpp
+        src/JsonHelper.cpp
 
         mainwindow.h
         mainwindow.ui
@@ -37,6 +38,7 @@ set(PROJECT_SOURCES
         headers/PythonConnection.h
         headers/Validators.h
         headers/QtToCHelper.h
+        headers/JsonHelper.h
 
 )
 

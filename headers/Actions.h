@@ -18,6 +18,8 @@
 class Actions {
 	public:
 		Actions();
+
+        ~Actions();
 	
 		float queryBalance(std::string taxID);
 

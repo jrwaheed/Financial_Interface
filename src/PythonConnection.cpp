@@ -1,10 +1,6 @@
 
 #include <stdio.h>
 #include <iostream>
-//  #include <jsoncpp/json/json.h>
-// #include <jsoncpp/json/reader.h>
-// #include <jsoncpp/json/writer.h>
-// #include <jsoncpp/json/value.h>
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -36,10 +32,7 @@ std::string PythonConnection::call_Python_no_Param(const char* functionName){
 };
 
 std::string PythonConnection::call_Python_with_Param(const char* functionName, std::string currency){
-
-
     Py_Initialize();
-
 
     PyObject *name, *load_module, *func, *callfunc, *args;
 
@@ -63,14 +56,4 @@ std::string PythonConnection::call_Python_with_Param(const char* functionName, s
     Py_Finalize();    
 };
 
-json PythonConnection::convertToJson(std::string simpleText){
-    auto fullJson = nlohmann::json::parse(simpleText);
-    
-    auto result =  fullJson["conversion_rates"]["AED"];
-    const auto valueToString = result.dump();
 
-    std::cout <<"Here is the value: " <<valueToString << std::endl;
-
-};
-
-// std::string PythonConnection::getCurrencyConversion(json fulljson, )

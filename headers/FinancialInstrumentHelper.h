@@ -11,9 +11,7 @@
 struct FinancialInstrumentHelper{
     FinancialInstrumentHelper();
 
-    Json::Value createJson(std::string jsonString);
-
-    std::string getForeignCurrency(std::string foreignCurrency, Json::Value currencyJson);
+    std::string geCurrencyConversionRate(std::string baseCurrency, std::string quoteCurrency);
 
     std::string getOptionPrice(std::string optionPrice, Json::Value currencyJson);
 

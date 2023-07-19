@@ -17,6 +17,8 @@
 
 Actions::Actions(){}
 
+Actions::~Actions(){};
+
 float Actions::queryBalance(std::string taxID){
 
 	sql::PreparedStatement* pre_stmt;

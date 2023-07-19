@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Financial_Interface.dir/src/Customer.cpp.o"
   "CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.o"
   "CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.o"
+  "CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.o"
   "CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.o"
   "CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.o"
   "CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o"
