@@ -14,31 +14,64 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QTabWidget" name="AccountPortfolioToggle">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>60</y>
-      <width>151</width>
-      <height>31</height>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>541</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Check Account Balance</string>
+    <property name="currentIndex">
+     <number>1</number>
     </property>
-   </widget>
-   <widget class="QLabel" name="checkingAccountBalance">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>60</y>
-      <width>311</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
+    <widget class="QWidget" name="accountTab">
+     <attribute name="title">
+      <string>Account</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Check Account Balance</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="checkingAccountBalance">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>20</y>
+        <width>311</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="portfolioTab">
+     <attribute name="title">
+      <string>Portfolio</string>
+     </attribute>
+     <widget class="QTableView" name="portfoliotTableView">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>21</y>
+        <width>381</width>
+        <height>371</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

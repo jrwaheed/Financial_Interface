@@ -85,7 +85,7 @@ void Actions::makeDeposit(std::string taxID, float deposit){
 		delete con;
 	
 	} catch(...){
-		std::cout <<"Exception occurred while accessing the database." << std::endl;
+		std::cout <<"Exception occurred while accessing the database: makeDeposit." << std::endl;
 	}
 }
 
@@ -130,7 +130,7 @@ void Actions::makeWithdrawal(std::string taxID, float withdrawal){
 		delete con;
 	
 	}catch(...){
-		std::cout <<"Exception occurred while accessing the database." << std::endl;
+		std::cout <<"Exception occurred while accessing the database: makeWithdrawal" << std::endl;
 	}
 }
 
@@ -183,7 +183,7 @@ void Actions::createNewAccount(std::shared_ptr<Customer> customer, float deposit
 		delete con;
 
 	}catch(...){
-		std::cout <<"Exception occurred while accessing the database." << std::endl;
+		std::cout <<"Exception occurred while accessing the database: createNewAccount" << std::endl;
 	}
 }
 
@@ -212,7 +212,7 @@ int Actions::queryPin(std::string taxID){
 		delete con;
 	
 	} catch(...){
-		std::cout <<"Exception occurred while accessing the database." << std::endl;
+		std::cout <<"Exception occurred while accessing the database: queryPin" << std::endl;
 	}
 	return 0;
 }
@@ -244,7 +244,7 @@ bool Actions::queryExistingCustomer(std::shared_ptr<Customer> customer){
 		delete con;
 
 	} catch(...){
-		std::cout <<"Exception occurred while accessing the database." << std::endl;
+		std::cout <<"Exception occurred while accessing the database: queryExistingCustomer" << std::endl;
 	}
 	return false;
 }
@@ -282,7 +282,7 @@ bool Actions::isPortfolioHolder(std::string taxID){
 		delete con;
 
 	} catch(...){
-		std::cout <<"Exception occurred while accessing the database." << std::endl;
+		std::cout <<"Exception occurred while accessing the database: isPortfolioHolder" << std::endl;
 	}
 	return false;
 }
@@ -310,13 +310,12 @@ std::map<std::string, int> Actions::queryPortfolioPosition(std::string taxID){
 			portfolio.insert({ticker, shares});
 		};
 
-		return portfolio;
 		delete res;
 		delete pre_stmt;
 		delete con;
 
 	} catch(...){
-		std::cout <<"Exception occurred while accessing the database." << std::endl;
+		std::cout <<"Exception occurred while accessing the database: queryPortfolioPosition" << std::endl;
 	}	
 	return portfolio;
 }

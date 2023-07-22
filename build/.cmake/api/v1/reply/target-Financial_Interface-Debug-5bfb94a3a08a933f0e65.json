@@ -27,25 +27,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 62,
+				"line" : 64,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 92,
+				"line" : 94,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 78,
+				"line" : 80,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 69,
+				"line" : 71,
 				"parent" : 0
 			}
 		]
@@ -132,7 +132,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -223,16 +224,16 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				13,
-				15,
-				17,
+				14,
+				16,
 				18,
 				19,
 				20,
@@ -240,15 +241,17 @@
 				22,
 				23,
 				24,
-				25
+				25,
+				26,
+				27
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				14,
-				16
+				15,
+				17
 			]
 		}
 	],
@@ -335,6 +338,12 @@
 		},
 		{
 			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/PortfolioTableModel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"path" : "mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
@@ -396,6 +405,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "headers/JsonHelper.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "headers/PortfolioTableModel.h",
 			"sourceGroupIndex" : 1
 		}
 	],

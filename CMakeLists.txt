@@ -25,6 +25,7 @@ set(PROJECT_SOURCES
         src/Validators.cpp
         src/QtToCHelper.cpp
         src/JsonHelper.cpp
+        src/PortfolioTableModel.cpp
 
         mainwindow.h
         mainwindow.ui
@@ -39,6 +40,7 @@ set(PROJECT_SOURCES
         headers/Validators.h
         headers/QtToCHelper.h
         headers/JsonHelper.h
+        headers/PortfolioTableModel.h
 
 )
 

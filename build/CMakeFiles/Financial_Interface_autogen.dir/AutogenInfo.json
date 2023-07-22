@@ -38,6 +38,11 @@
 			"K6S233IZAZ/moc_JsonHelper.cpp"
 		],
 		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/PortfolioTableModel.h",
+			"MU",
+			"K6S233IZAZ/moc_PortfolioTableModel.cpp"
+		],
+		[
 			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/PythonConnection.h",
 			"MU",
 			"K6S233IZAZ/moc_PythonConnection.cpp"
@@ -143,6 +148,10 @@
 		],
 		[
 			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/JsonHelper.cpp",
+			"MU"
+		],
+		[
+			"/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PortfolioTableModel.cpp",
 			"MU"
 		],
 		[
