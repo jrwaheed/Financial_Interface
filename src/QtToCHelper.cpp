@@ -2,6 +2,10 @@
 #include "../headers/QtToCHelper.h"
 
 #include <QString>
+#include <map>
+#include <vector>
+#include <utility>
+#include <sstream>
 
 QtToCHelper::QtToCHelper(){}
 
@@ -19,4 +23,33 @@ int QtToCHelper::getInteger(QString qtext){
 
 QString QtToCHelper::getQString(std::string text){
     return QString::fromStdString(text);
+}
+
+QString QtToCHelper::getQStringFromInt(int value){
+    std::string text = std::to_string(value);
+    return QString::fromStdString(text);
+}
+
+QString QtToCHelper::gridbuilder(int row, int col, std::vector<std::vector<std::string>> portfolio){   
+    std::vector <std::vector<std::string>>::iterator it_portfolio = portfolio.begin();
+
+    std::string result;
+    std::stringstream ss;
+
+    if(col == 0){
+        auto result = (it_portfolio + row)->at(0);
+        return getQString(result);
+
+    }else if (col == 1){
+        auto result = (it_portfolio + row)->at(1);
+        return getQString(result);
+
+    }else if (col == 2){
+        auto result = (it_portfolio + row)->at(2);
+        return getQString(result);
+
+    } else if (col == 3){
+        auto result = (it_portfolio + row)->at(3);
+        return getQString(result);
+    }
 }

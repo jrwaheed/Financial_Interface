@@ -1,6 +1,9 @@
 #include "../headers/Actions.h"
 #include "../headers/PortfolioTableModel.h"
+#include "../headers/QtToCHelper.h"
 #include <map>
+#include <vector>
+#include <utility>
 
 PortfolioTableModel::PortfolioTableModel(std::string tax_Id, QObject * parent)
     :QAbstractTableModel (parent),
@@ -10,28 +13,39 @@ PortfolioTableModel::PortfolioTableModel(std::string tax_Id, QObject * parent)
     }
     int PortfolioTableModel::rowCount(const QModelIndex &parent) const {
         Actions action;
-        std::map<std::string, int> portfolio = action.queryPortfolioPosition(tax_Id);
+        auto portfolio = action.queryPortfolioPosition(tax_Id);
         return portfolio.size();
     }
 
     int PortfolioTableModel::columnCount(const QModelIndex &parent) const
     {
-        return 2;
+        return 4;
     }
 
     QVariant PortfolioTableModel::data(const QModelIndex &index, int role) const
     {
 
         Actions actionTwo;
-        std::map<std::string, int> portfolio = actionTwo.queryPortfolioPosition(tax_Id);
-        std::map<std::string, int>::iterator it_portfolio;
+        auto portfolio = actionTwo.queryPortfolioPosition(tax_Id);
+
+        int row = index.row();
+        int col = index.column();
+        QtToCHelper QtHelper;
+
         if (role == Qt::DisplayRole)
 
         
         {
-        return QString("Row%1, Column%2")
-                    .arg(index.row() + 1)
-                    .arg(index.column() +1);
+        return QString("%1")
+                    .arg(QtHelper.gridbuilder(row, col, portfolio));
+                   
+                     
         }
         return QVariant();
     }
+    
+
+    // QVariant PortfolioTableModel::headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole){
+    //     return QVariant();
+    // }
+

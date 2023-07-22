@@ -701,8 +701,10 @@ CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o
  /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/Actions.h
  /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/Customer.h
  /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/PortfolioTableModel.h
+ /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/QtToCHelper.h
  /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PortfolioTableModel.cpp
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h

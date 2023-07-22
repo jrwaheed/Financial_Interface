@@ -700,8 +700,10 @@ CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.o: /usr/include/python3.8/
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: ../headers/Actions.h
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: ../headers/Customer.h
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: ../headers/PortfolioTableModel.h
+CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: ../headers/QtToCHelper.h
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: ../src/PortfolioTableModel.cpp
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel
+CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
