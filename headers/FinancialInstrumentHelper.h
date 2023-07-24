@@ -11,11 +11,11 @@
 struct FinancialInstrumentHelper{
     FinancialInstrumentHelper();
 
-    std::string geCurrencyConversionRate(std::string baseCurrency, std::string quoteCurrency);
+    std::string getCurrencyConversionRate(std::string baseCurrency, std::string quoteCurrency);
 
     std::string getOptionPrice(std::string optionPrice, Json::Value currencyJson);
 
-    std::string getStockPrice(std::string stockPrice, Json::Value currencyJson);
+    std::string getStockPrice(std::string stockPrice);
 };
 
 #endif

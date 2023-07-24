@@ -10,7 +10,15 @@
 
 FinancialInstrumentHelper::FinancialInstrumentHelper(){}
 
-std::string FinancialInstrumentHelper::geCurrencyConversionRate(std::string baseCurrency, std::string quoteCurrency){
+std::string FinancialInstrumentHelper::getStockPrice(std::string ticker){
+    PythonConnection Py;
+    std::string stockPrice = Py.call_Python_with_Param("callFinnHubStockValue", ticker);
+    std::cout << stockPrice << std::endl;
+
+    return stockPrice;
+};
+
+std::string FinancialInstrumentHelper::getCurrencyConversionRate(std::string baseCurrency, std::string quoteCurrency){
     PythonConnection Py;
     std::cout << Py.call_Python_with_Param("callCurrencies", baseCurrency) << std::endl;
     std::string sampleString = Py.call_Python_with_Param("callCurrencies", baseCurrency);
@@ -28,10 +36,6 @@ std::string FinancialInstrumentHelper::getOptionPrice(std::string optionPrice, J
     // std::string optionPrice = currencyJson["Options"][optionPrice].asString();
 
     return optionPrice;
-};
+}; 
 
-std::string FinancialInstrumentHelper::getStockPrice(std::string stockPrice, Json::Value currencyJson){
-    // std::string optionPrice = currencyJson["Stocks"][stockPrice].asString();
 
-    return stockPrice;
-};

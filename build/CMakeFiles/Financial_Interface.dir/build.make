@@ -60,184 +60,184 @@ include CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.o: Financial_Interface_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/mocs_compilation.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/mocs_compilation.cpp
 
 CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/mocs_compilation.cpp > CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/mocs_compilation.cpp > CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/mocs_compilation.cpp -o CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/Financial_Interface_autogen/mocs_compilation.cpp -o CMakeFiles/Financial_Interface.dir/Financial_Interface_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/Financial_Interface.dir/main.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Financial_Interface.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/main.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/main.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/main.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/main.cpp
 
 CMakeFiles/Financial_Interface.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/main.cpp > CMakeFiles/Financial_Interface.dir/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/main.cpp > CMakeFiles/Financial_Interface.dir/main.cpp.i
 
 CMakeFiles/Financial_Interface.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/main.cpp -o CMakeFiles/Financial_Interface.dir/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/main.cpp -o CMakeFiles/Financial_Interface.dir/main.cpp.s
 
 CMakeFiles/Financial_Interface.dir/mainwindow.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/mainwindow.cpp.o: ../mainwindow.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Financial_Interface.dir/mainwindow.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/mainwindow.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/mainwindow.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/mainwindow.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/mainwindow.cpp
 
 CMakeFiles/Financial_Interface.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/mainwindow.cpp > CMakeFiles/Financial_Interface.dir/mainwindow.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/mainwindow.cpp > CMakeFiles/Financial_Interface.dir/mainwindow.cpp.i
 
 CMakeFiles/Financial_Interface.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/mainwindow.cpp -o CMakeFiles/Financial_Interface.dir/mainwindow.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/mainwindow.cpp -o CMakeFiles/Financial_Interface.dir/mainwindow.cpp.s
 
 CMakeFiles/Financial_Interface.dir/useroverview.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/useroverview.cpp.o: ../useroverview.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Financial_Interface.dir/useroverview.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/useroverview.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/useroverview.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp
 
 CMakeFiles/Financial_Interface.dir/useroverview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/useroverview.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp > CMakeFiles/Financial_Interface.dir/useroverview.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp > CMakeFiles/Financial_Interface.dir/useroverview.cpp.i
 
 CMakeFiles/Financial_Interface.dir/useroverview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/useroverview.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp -o CMakeFiles/Financial_Interface.dir/useroverview.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/useroverview.cpp -o CMakeFiles/Financial_Interface.dir/useroverview.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.o: ../src/AccessCard.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp
 
 CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp > CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp > CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp -o CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp -o CMakeFiles/Financial_Interface.dir/src/AccessCard.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/Actions.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/Actions.cpp.o: ../src/Actions.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Financial_Interface.dir/src/Actions.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/Actions.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Actions.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/Actions.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Actions.cpp
 
 CMakeFiles/Financial_Interface.dir/src/Actions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/Actions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Actions.cpp > CMakeFiles/Financial_Interface.dir/src/Actions.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Actions.cpp > CMakeFiles/Financial_Interface.dir/src/Actions.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/Actions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/Actions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Actions.cpp -o CMakeFiles/Financial_Interface.dir/src/Actions.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Actions.cpp -o CMakeFiles/Financial_Interface.dir/src/Actions.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/Customer.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/Customer.cpp.o: ../src/Customer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Financial_Interface.dir/src/Customer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/Customer.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Customer.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/Customer.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Customer.cpp
 
 CMakeFiles/Financial_Interface.dir/src/Customer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/Customer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Customer.cpp > CMakeFiles/Financial_Interface.dir/src/Customer.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Customer.cpp > CMakeFiles/Financial_Interface.dir/src/Customer.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/Customer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/Customer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Customer.cpp -o CMakeFiles/Financial_Interface.dir/src/Customer.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Customer.cpp -o CMakeFiles/Financial_Interface.dir/src/Customer.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.o: ../src/DBConnection.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/DBConnection.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/DBConnection.cpp
 
 CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/DBConnection.cpp > CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/DBConnection.cpp > CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/DBConnection.cpp -o CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/DBConnection.cpp -o CMakeFiles/Financial_Interface.dir/src/DBConnection.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.o: ../src/FinancialInstrumentHelper.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/FinancialInstrumentHelper.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/FinancialInstrumentHelper.cpp
 
 CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/FinancialInstrumentHelper.cpp > CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/FinancialInstrumentHelper.cpp > CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/FinancialInstrumentHelper.cpp -o CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/FinancialInstrumentHelper.cpp -o CMakeFiles/Financial_Interface.dir/src/FinancialInstrumentHelper.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.o: ../src/PythonConnection.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PythonConnection.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PythonConnection.cpp
 
 CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PythonConnection.cpp > CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PythonConnection.cpp > CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PythonConnection.cpp -o CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PythonConnection.cpp -o CMakeFiles/Financial_Interface.dir/src/PythonConnection.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o: ../src/Validators.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Validators.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/Validators.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Validators.cpp
 
 CMakeFiles/Financial_Interface.dir/src/Validators.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/Validators.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Validators.cpp > CMakeFiles/Financial_Interface.dir/src/Validators.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Validators.cpp > CMakeFiles/Financial_Interface.dir/src/Validators.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/Validators.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/Validators.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Validators.cpp -o CMakeFiles/Financial_Interface.dir/src/Validators.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/Validators.cpp -o CMakeFiles/Financial_Interface.dir/src/Validators.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.o: ../src/QtToCHelper.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/QtToCHelper.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/QtToCHelper.cpp
 
 CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/QtToCHelper.cpp > CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/QtToCHelper.cpp > CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/QtToCHelper.cpp -o CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/QtToCHelper.cpp -o CMakeFiles/Financial_Interface.dir/src/QtToCHelper.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.o: ../src/JsonHelper.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/JsonHelper.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/JsonHelper.cpp
 
 CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/JsonHelper.cpp > CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/JsonHelper.cpp > CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/JsonHelper.cpp -o CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/JsonHelper.cpp -o CMakeFiles/Financial_Interface.dir/src/JsonHelper.cpp.s
 
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: CMakeFiles/Financial_Interface.dir/flags.make
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o: ../src/PortfolioTableModel.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PortfolioTableModel.cpp
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.o -c /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PortfolioTableModel.cpp
 
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PortfolioTableModel.cpp > CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PortfolioTableModel.cpp > CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.i
 
 CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PortfolioTableModel.cpp -o CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PortfolioTableModel.cpp -o CMakeFiles/Financial_Interface.dir/src/PortfolioTableModel.cpp.s
 
 # Object files for target Financial_Interface
 Financial_Interface_OBJECTS = \

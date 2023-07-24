@@ -7,6 +7,7 @@
 #include "headers/Actions.h"
 #include "headers/PortfolioTableModel.h"
 
+
 float getCheckingAccountBalance(std::string loginTaxId){
     Actions action;
     return action.queryBalance(loginTaxId);
@@ -21,18 +22,15 @@ useroverview::useroverview(QWidget *parent, std::string loginTaxId) :
 
 
 
+    Actions action;
+    auto portfolio = action.updatePortfolioWithPrices(loginTaxId);
 
 
+    PortfolioTableModel* portfolioModel = new PortfolioTableModel(loginTaxId, portfolio, nullptr);
 
-        PortfolioTableModel* portfolioModel = new PortfolioTableModel(loginTaxId, this);
 
-        // for(auto ele : portfolio){
             ui->portfoliotTableView->setModel(portfolioModel);
-            ui->portfoliotTableView->show();
-
-
-        //    std::cout << "Ticker: " << ele.first <<" Shares: " << ele.second << std::endl;
-        
+            ui->portfoliotTableView->show();        
     }
     
 

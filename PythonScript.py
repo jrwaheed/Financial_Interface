@@ -1,6 +1,7 @@
 import requests
 import json
 import PythonKeys
+import finnhub
 
 
 def callCurrenciesOnUSD():
@@ -24,13 +25,13 @@ def callCurrencies(baseCurrency):
 
     return result
 
+
 def callCurrenciesInJson(baseCurrency):
     url = 'https://v6.exchangerate-api.com/v6/' + PythonKeys.CurrencyAPIKey + \
         '/latest/' + baseCurrency
 
     response = requests.get(url)
     data = response.json()
-    
     return data
 
 
@@ -49,5 +50,14 @@ def callStockAndOptionsUSD():
 
     data = response.json()
     result = json.dumps(data)
+
+    return result
+
+
+def callFinnHubStockValue(ticker):
+    finnhub_client = finnhub.Client(api_key= PythonKeys.FinnHubAPIKey)
+
+    response = finnhub_client.quote(ticker)
+    result = json.dumps(response['c'])
 
     return result

@@ -15,6 +15,7 @@
 
 #include "../headers/Actions.h"
 #include "../headers/DBConnection.h"
+#include "../headers/PythonConnection.h"
 	
 
 Actions::Actions(){}
@@ -289,11 +290,14 @@ bool Actions::isPortfolioHolder(std::string taxID){
 	return false;
 }
 
-std::vector <std::vector<std::string>> Actions::queryPortfolioPosition(std::string taxID){
+std::vector<std::vector<std::string>> Actions::queryPortfolioPosition(std::string taxID){
 	sql::PreparedStatement* pre_stmt;
 	sql::ResultSet* res;
 	// std::map<std::string, int> portfolio;
     std::vector<std::vector<std::string>> portfolio;
+
+	
+
 
 	try {
 		DBConnection dbCon;
@@ -303,19 +307,24 @@ std::vector <std::vector<std::string>> Actions::queryPortfolioPosition(std::stri
 		pre_stmt->setString(1, taxID);
 		res = pre_stmt->executeQuery();
 		
-		std::string ticker;
+    std::string ticker;
 		
 		int shares = 0;
-		
+
+
 		while(res->next()){
 			ticker = res->getString("ticker");
             shares = res->getInt("shares");
 
-            std::vector<std::string> position;
-            position.push_back(ticker);
-            position.push_back(std::to_string(shares));
-            position.push_back("current value");
-            position.push_back("blank for now");
+            std::vector<std::string> position(3);
+
+//            std::vector<std::string>::iterator itr_position = position.begin();
+
+            position[1] = std::to_string(shares);
+            position[0] = ticker;
+
+            // position.push_back("Price");
+
 
 			portfolio.push_back(position);
 		};
@@ -330,6 +339,22 @@ std::vector <std::vector<std::string>> Actions::queryPortfolioPosition(std::stri
 	return portfolio;
 }
 
+std::vector<std::vector<std::string>> Actions::updatePortfolioWithPrices(std::string tax_Id){
+    Actions action;
+	auto portfolio = action.queryPortfolioPosition(tax_Id);
 
+	PythonConnection Py;
+
+    for(int position = 0; position != portfolio.size(); ++position){
+        std::vector<std::vector<std::string>>::iterator itr_portfolio = (portfolio.begin() + position);
+        std::string stock = itr_portfolio->at(0);
+        std::string price = Py.call_Python_with_Param("callFinnHubStockValue", stock);
+        itr_portfolio->at(2) = price;
+
+	}
+
+    return portfolio;
+
+}
 
 

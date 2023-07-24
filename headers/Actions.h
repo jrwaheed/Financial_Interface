@@ -37,8 +37,8 @@ class Actions {
 
         bool isPortfolioHolder(std::string taxID);
 
-        std::vector <std::vector<std::string>> queryPortfolioPosition(std::string taxID);
+        std::vector<std::vector<std::string>> queryPortfolioPosition(std::string taxID);
 
-        // std::vector <std::string[3]> testFunction(std::string taxID);
+        std::vector<std::vector<std::string>> updatePortfolioWithPrices(std::string tax_Id);
 };
 #endif

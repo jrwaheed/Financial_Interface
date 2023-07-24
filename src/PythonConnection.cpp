@@ -5,14 +5,22 @@
 #include <sstream>
 #include <string>
 #include <Python.h>
-#include <nlohmann/json.hpp>
+// #include <nlohmann/json.hpp>
 
 #include "../headers/PythonConnection.h"
 
- using json = nlohmann::json;
+//  using json = nlohmann::json;
 
 
-PythonConnection::PythonConnection(){}
+PythonConnection::PythonConnection(){
+    std::cout <<"Python connection created." << std::endl;
+
+}
+
+PythonConnection::~PythonConnection(){
+    std::cout <<"Python connection terminated." << std::endl;
+    
+}
 
 std::string PythonConnection::call_Python_no_Param(const char* functionName){
     Py_Initialize(); 
@@ -50,10 +58,10 @@ std::string PythonConnection::call_Python_with_Param(const char* functionName, s
     callfunc = PyObject_CallObject(func, args);
     std::string result = _PyUnicode_AsString(callfunc);
    
-
+//    Py_Finalize();    
     return result;
     
-    Py_Finalize();    
+ 
 };
 
 

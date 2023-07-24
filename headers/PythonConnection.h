@@ -10,6 +10,7 @@
 
 struct PythonConnection{
     PythonConnection();
+    ~PythonConnection();
 
     std::string call_Python_no_Param(const char* functionName);
 

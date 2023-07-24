@@ -2,15 +2,17 @@
 #define PORTFOLIOTABLEMODEL_H
 
 #include <QAbstractTableModel>
+#include "../headers/Actions.h"
 
 class PortfolioTableModel : public QAbstractTableModel {
     Q_OBJECT
 
     private:
         std::string tax_Id;
+        std::vector<std::vector<std::string>> portfolio; 
 
     public:
-        PortfolioTableModel( std::string tax_Id, QObject *parent = nullptr);
+        PortfolioTableModel(std::string tax_Id, std::vector<std::vector<std::string>> portfolio, QObject *parent = nullptr);
 
         int rowCount(const QModelIndex &parent = QModelIndex()) const;
         int columnCount(const QModelIndex &parent = QModelIndex()) const;

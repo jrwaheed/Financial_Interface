@@ -33,9 +33,6 @@ QString QtToCHelper::getQStringFromInt(int value){
 QString QtToCHelper::gridbuilder(int row, int col, std::vector<std::vector<std::string>> portfolio){   
     std::vector <std::vector<std::string>>::iterator it_portfolio = portfolio.begin();
 
-    std::string result;
-    std::stringstream ss;
-
     if(col == 0){
         auto result = (it_portfolio + row)->at(0);
         return getQString(result);
