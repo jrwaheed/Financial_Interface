@@ -16,7 +16,7 @@ PortfolioTableModel::PortfolioTableModel(std::string tax_Id, std::vector<std::ve
     }
 
     int PortfolioTableModel::columnCount(const QModelIndex &parent) const{
-        return 3;
+        return 4;
     }
 
     QVariant PortfolioTableModel::data(const QModelIndex &index, int role) const {

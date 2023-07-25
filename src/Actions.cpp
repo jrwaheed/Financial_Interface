@@ -316,7 +316,7 @@ std::vector<std::vector<std::string>> Actions::queryPortfolioPosition(std::strin
 			ticker = res->getString("ticker");
             shares = res->getInt("shares");
 
-            std::vector<std::string> position(3);
+            std::vector<std::string> position(4);
 
 //            std::vector<std::string>::iterator itr_position = position.begin();
 
@@ -354,7 +354,23 @@ std::vector<std::vector<std::string>> Actions::updatePortfolioWithPrices(std::st
 	}
 
     return portfolio;
-
 }
 
+
+std::vector<std::vector<std::string>> Actions::updatePortfolioWithPositionValue(std::vector<std::vector<std::string>> portfolio){
+	
+	for(int position = 0; position != portfolio.size(); ++position){
+		std::vector<std::vector<std::string>>::iterator itr_portfolio = (portfolio.begin() + position);
+		std::string shares = itr_portfolio->at(1);
+		std::string price = itr_portfolio->at(2);
+
+		int workingShares = stoi(shares);
+		float workingPrice = stof(price);
+
+		float workingValue = workingShares * workingPrice;
+		itr_portfolio->at(3) = std::to_string(workingValue);
+	}
+
+	return portfolio;
+}
 

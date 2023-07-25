@@ -23,10 +23,12 @@ useroverview::useroverview(QWidget *parent, std::string loginTaxId) :
 
 
     Actions action;
+    
     auto portfolio = action.updatePortfolioWithPrices(loginTaxId);
+    auto finalizedPortfolio = action.updatePortfolioWithPositionValue(portfolio);
 
 
-    PortfolioTableModel* portfolioModel = new PortfolioTableModel(loginTaxId, portfolio, nullptr);
+    PortfolioTableModel* portfolioModel = new PortfolioTableModel(loginTaxId, finalizedPortfolio, nullptr);
 
 
             ui->portfoliotTableView->setModel(portfolioModel);

@@ -40,5 +40,6 @@ class Actions {
         std::vector<std::vector<std::string>> queryPortfolioPosition(std::string taxID);
 
         std::vector<std::vector<std::string>> updatePortfolioWithPrices(std::string tax_Id);
+        std::vector<std::vector<std::string>> updatePortfolioWithPositionValue(std::vector<std::vector<std::string>> portfolio);
 };
 #endif
