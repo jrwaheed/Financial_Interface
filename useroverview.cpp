@@ -14,26 +14,20 @@ float getCheckingAccountBalance(std::string loginTaxId){
 }
 
 useroverview::useroverview(QWidget *parent, std::string loginTaxId) :
-    QMainWindow(parent),
-    ui(new Ui::useroverview)
+    QMainWindow(parent), ui(new Ui::useroverview)
 {
     ui->setupUi(this);
     ui->checkingAccountBalance->setNum(getCheckingAccountBalance(loginTaxId));
-
-
 
     Actions action;
     
     auto portfolio = action.updatePortfolioWithPrices(loginTaxId);
     auto finalizedPortfolio = action.updatePortfolioWithPositionValue(portfolio);
 
-
     PortfolioTableModel* portfolioModel = new PortfolioTableModel(loginTaxId, finalizedPortfolio, nullptr);
-
-
-            ui->portfoliotTableView->setModel(portfolioModel);
-            ui->portfoliotTableView->show();        
-    }
+    ui->portfoliotTableView->setModel(portfolioModel);
+    ui->portfoliotTableView->show();        
+}
     
 
 

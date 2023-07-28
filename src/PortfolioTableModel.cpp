@@ -37,7 +37,22 @@ PortfolioTableModel::PortfolioTableModel(std::string tax_Id, std::vector<std::ve
     }
     
 
-    // QVariant PortfolioTableModel::headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole){
-    //     return QVariant();
-    // }
+    QVariant PortfolioTableModel::headerData( int section, Qt::Orientation orientation, int role) const{
+        if (role == Qt::DisplayRole)
+            if (orientation == Qt::Horizontal) {
+                switch (section)
+                {
+                case 0:
+                    return QString("ticker");
+                case 1:
+                    return QString("shares");
+                case 2:
+                    return QString("share value");
+                case 3:
+                    return QString("position value");
+                }
+            }
+            return QVariant();
+        
+    };
 

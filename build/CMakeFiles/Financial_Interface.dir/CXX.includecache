@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/AccessCard.h
+iostream
+-
+
 /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/Actions.h
 iostream
 -
@@ -47,6 +51,12 @@ QString
 -
 map
 -
+
+/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/AccessCard.cpp
+iostream
+-
+../headers/AccessCard.h
+/home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/headers/AccessCard.h
 
 /home/jamal/PracticeSpace/Cpp/Financial_Interface_Combined/Financial_Interface/src/PortfolioTableModel.cpp
 ../headers/Actions.h
